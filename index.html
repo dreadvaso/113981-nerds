@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
-
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>Nerds</title>
+	</head>
+	<body>
+		<header class="main-header"><!-- шапка -->
+			<div class="container"><!-- центровка -->
+				<section class="navigation-panel"><!-- лого, навигация, блок пользователя -->
+					<div class="main-logo"><!-- Логотип nerds -->
+						<a href="#"><img src="http://placehold.it/150x60" alt="logo"></a>
+					</div>
+					<nav class="navigation-menu"><!-- главная навигация -->
+						<ul>
+							<li><a href="#">Студия</a></li>
+							<li><a href="#">Клиенты</a></li>
+							<li><a href="#">Магазин</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="user-block"><!-- блок пользователя -->
+						<a class="basket" href="#">Корзина</a>
+					</div>
+				</section>
+				
+				<section class="slider"><!-- Блок слайдера -->
+					<div class="slider-left"><!-- Левая колонка слайдера -->
+						<h2 class="slogan">Долго, дорого, скрупулезно.</h2>
+						<p class="description-slogan">Математически выверенный дизайн<br>
+						для вашего сайта или мобильного приложения.</p>
+						<a class="description-link" href="#">Узнать больше</a>
+					</div>
+					<div class="slider-right"><!-- Правая колонка слайдера -->
+						<div class="images-slider"><!-- Картинка слайдера -->
+							<img src="http://placehold.it/250x200">
+						</div>
+					</div>
+					<div class=""><!-- Переключатель слайдера -->
+						<form action="#" method="get">
+							<input type="radio" name="click" value="one" checked>
+							<input type="radio" name="click" value="two">
+							<input type="radio" name="click" value="three">
+						</form>
+					</div>
+				</section>
+			</div>
+		</header>
+			
+		<main class="container"><!-- Центровка -->
+			<section class="service"><!-- Блок с предложениями -->
+				<div class="service-item">
+					<b class="service-name">Веб сайты</b>
+					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<a class="btn btn-red" href="#">Заказать</a>
+				</div>
+				<div class="service-item">
+					<b class="service-name">Приложения</b>
+					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+					<a class="btn btn-green" href="#">Заказать</a>
+				</div>
+				<div class="service-item">
+					<b class="service-name">Презентации</b>
+					<p>Вы даже не подозреваете насколько вы изумительны!</p>
+					<a class="btn btn-yellow" href="#">Заказать</a>
+				</div>
+			</section>
+			
+			<section class="about-company"><!-- Информация о компании -->
+				<div class="about-company-left"><!-- Левая колонка -->
+					<h1 class="title-company">Мы &ndash; маленькая, но гордая дизайн-студия из Краснодара.</h1>
+					<p>Исповедуем принципы минимализма и чистоты. Ставим математический
+					расчет выше креатива. Работаем не покладая рук, как роботы</p>
+						<p>Выполняем заказы на разработку:</p>
+						<ul class="list">
+							<li>Веб сайтов любой сложности</li>
+							<li>Мобильных приложений дл iOS и Android</li>
+							<li>Слайдшоу и видео для корпоративных презентаций</li>
+						</ul>
+				</div>
+				<div class="about-company-right"><!-- Правая колонка -->
+					<div class="secondary-logo">
+						<a href="#"><img src="http://placehold.it/140x100" alt="logo"></a>
+						<b class="mark">Since 2004</b>
+					</div>
+					<p>Как мы работаем:</p>
+					<ul class="list-two">
+						<li>С самоотдачей 146%</li>
+						<li>Соблюдая сроки на 100%</li>
+						<li>По предоплате 50%</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section class="partners"><!-- Логотипы компаний -->
+				<div class="partners-logo">
+					<a href="#"><img src="http://placehold.it/200x100" alt="glukhanko"></a>
+				</div>
+				<div class="partners-logo">
+					<a href="#"><img src="http://placehold.it/200x100" alt="html academy"></a>
+				</div>
+				<div class="partners-logo">
+					<a href="#"><img src="http://placehold.it/200x100" alt="barbershop borodinski"></a>
+				</div>
+			</section>
+			
+			<section class="map"><!-- Карта -->
+				<div class="interactive-map">
+					<img src="http://placehold.it/650x250" alt="карта">
+				</div>
+				<div class="contact-window"><!-- окошко с левой стороны карты-->
+					<b class="contact-name">Nёrds design studio</b>
+					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					<p>тел. +7(812)275-75-75</p>
+					<a class="contact-form">Напишите нам</a>
+				</div>
+			</section>
+		</main>
+		
+		<footer class="main-footer"><!-- Подвал -->
+			<div class="container">
+				<div class="social-logo-footer">
+					<a href="#"><img src="http://placehold.it/50x50" alt="vk"></a>
+					<a href="#"><img src="http://placehold.it/50x50" alt="facebook"></a>
+					<a href="#"><img src="http://placehold.it/50x50" alt="instagram"></a>
+				</div>
+				<div class="footer-information">
+					<h2>Давайте дружить, это выгодно!</h2>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
