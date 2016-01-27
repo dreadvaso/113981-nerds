@@ -7,12 +7,12 @@
 	<body>
 		<header class="main-header"><!-- шапка -->
 			<div class="container"><!-- центровка -->
-				<section class="navigation-panel"><!-- лого, навигация, блок пользователя -->
+				<div class="navigation-panel"><!-- лого, навигация, блок пользователя -->
 					<div class="main-logo"><!-- Логотип nerds -->
 						<a href="#"><img src="http://placehold.it/150x60" alt="logo"></a>
 					</div>
 					<nav class="navigation-menu"><!-- навигация -->
-						<ul>
+						<ul class="navigation-active">
 							<li><a href="#">Студия</a></li>
 							<li><a href="#">Клиенты</a></li>
 							<li><a href="#">Магазин</a></li>
@@ -22,7 +22,7 @@
 					<div class="user-block"><!-- блок пользователя -->
 						<a class="basket" href="#">Корзина</a>
 					</div>
-				</section>
+				</div>
 				
 				<h1 class="welcome">Добро пожаловать в магазин готовых макетов</h1>
 			</div>
@@ -32,9 +32,13 @@
 			<section class="information-main">
 				<div class="information-left">
 					<p>Стоимость:</p>
-						<p><input type="range"></p>
-						<p>От <input type="text" name="number" value="0"> 
-						До <input type="text" name="number-two" value="15000"></p>
+						<form action="#" method="get">
+							<input type="range">
+							<div class="money">
+								От <input type="text" name="number" value="0"> 
+								До <input type="text" name="number-two" value="15000">
+							</div>
+						</form>
 					
 					<p>Сетка:</p>
 					<form action="#" method="get">
@@ -51,8 +55,8 @@
 							<li><label><input type="checkbox" name="4" value="gallery">Галерея</label></li>
 							<li><label><input type="checkbox" name="5" value="basket">Корзина</label></li>
 						</ul>
+						<button class="submit" type="submit">Показать</button>
 					</form>
-					<a class="choice-look" href="">Показать</a>
 				</div>
 				
 				<div class="information-right">
@@ -61,8 +65,8 @@
 						<a class="sorting-item" href="">По цене</a>
 						<a class="sorting-item" href="">По типу</a>
 						<a class="sorting-item" href="">По функционалу</a>
-						<a class="sorting-item-image" href=""><img src="http://placehold.it/10x10" alt=""></a>
-						<a class="sorting-item-image" href=""><img src="http://placehold.it/10x10" alt=""></a>
+						<a class="sorting-item-arrow" href="#"></a><!-- стрелка вверх -->
+						<a class="sorting-item-arrow" href="#"></a><!-- стрелка вниз -->
 					</div>
 					
 					<div class="gallery-model">
@@ -90,11 +94,11 @@
 					</div>
 				</div>
 				
-				<div class="button">
-					<a class="button-number" href="#">1</a>
-					<a class="button-number" href="#">2</a>
-					<a class="button-number" href="#">3</a>
-					<a class="button-number" href="#">Следующая</a>
+				<div class="pagination">
+					<a class="pagination-number" href="#">1</a>
+					<a class="pagination-number" href="#">2</a>
+					<a class="pagination-number" href="#">3</a>
+					<a class="pagination-number" href="#">Следующая</a>
 				</div>
 			</section>
 			
@@ -113,7 +117,7 @@
 		
 		<footer class="main-footer"><!-- Подвал -->
 			<div class="container">
-				<div class="social-logo-footer">
+				<div class="social">
 					<a href="#"><img src="http://placehold.it/50x50" alt="vk"></a>
 					<a href="#"><img src="http://placehold.it/50x50" alt="facebook"></a>
 					<a href="#"><img src="http://placehold.it/50x50" alt="instagram"></a>
