@@ -9,3 +9,150 @@ h1, h2{
 	font-size: 36px;
 	color: #000000;
 }
+/* сетка */
+.main-header,
+.main-logo,
+.navigation-menu,
+.user-block,
+.slider,
+.slider-left,
+.slider-right,
+.service-item,
+.about-company-left,
+.about-company-right,
+.partners-logo,
+.contact-window,
+.social,
+.footer-information,
+.main-footer,
+.information-left,
+.information-right{
+	outline: 1px solid black;
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-header{ /* шапка */
+	margin-bottom: 80px;
+}
+.container{ /* центровщик */
+	width: 880px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.main-logo{ /* лого */
+	float: left;
+	width: 139px;
+	height: 56px;
+	margin-right: 20px;
+}
+.navigation-menu{ /* основная навигация */
+	float: left;
+	width: 560px;
+	margin-right: 60px;
+}
+.user-block{ /* блок пользователя */
+	float: right;
+	width: 100px;
+}
+.slider-left{ /* левая колонка слайдера */
+	float: left;
+	width: 380px;
+}
+.slider-right{ /* правая колонка слайдера */
+	float: right;
+	width: 338px;
+	height: 231px;
+}
+.slider-points{ /* переключатель слайдера */
+	clear: both;
+	text-align: center;
+}
+.service{ /* блок с предложениями */
+	margin-bottom: 131px;
+}
+.service-item{ /* предложения */
+	float: left;
+	width: 240px;
+	margin-right: 80px;
+}
+.service-item:last-child{
+	margin-right: 0;
+}
+.about-company{ /* информация о компании */
+	margin-bottom: 131px;
+}
+.about-company-left{
+	float: left;
+	width: 560px;
+	margin-right: 80px;
+}
+.about-company-right{
+	float: right;
+	width: 240px;
+}
+.partners{ /* партнеры */
+	margin-bottom: 118px;
+}
+.partners-logo{
+	float: left;
+	width: 240px;
+	margin-right: 80px;
+}
+.partners-logo:last-child{
+	margin-right: 0;
+}
+.map{
+	margin-bottom: 80px;
+}
+.contact-window{ /* окошко на карте */
+	width: 250px;
+}
+.social{
+	float: left;
+	width: 240px;
+	margin-right: 80px;
+}
+.footer-information{	
+	float: right;
+	width: 560px;
+}
+
+/* Сетка inner.html */
+.information-main{
+	margin-bottom: 75px;
+}
+.information-left{
+	float: left;
+	width: 240px;
+	margin-right: 80px;
+}
+.information-right{
+	float: right;
+	width: 560px;
+}
+.gallery-model{ /* галлерея */
+	font-size: 0;
+}
+.gallery-model p{
+	display: inline-block;
+	vertical-align: top;
+}
+.gallery-model p>img{
+	margin-right: 80px;
+}
+.gallery-model p>img:nth-child(2){
+	margin-right: 0;
+}
+.pagination{
+	margin-top: 80px;
+}
+
+
+
+
+
+
+

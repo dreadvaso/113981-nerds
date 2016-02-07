@@ -2,13 +2,14 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<title>Магазин готовых макетов</title>
 	</head>
 	<body>
-		<header class="main-header"><!-- шапка -->
+		<header class="main-header">
 			<div class="container"><!-- центровка -->
-				<div class="navigation-panel"><!-- лого, навигация, блок пользователя -->
+				<div class="navigation-panel clearfix"><!-- лого, навигация, блок пользователя -->
 					<div class="main-logo"><!-- Логотип nerds -->
 						<a href="#"><img src="img/main_logo.png" width="139" height="56" alt="logo"></a>
 					</div>
@@ -29,8 +30,8 @@
 			</div>
 		</header>
 		
-		<main class="container"><!--центровка-->
-			<section class="information-main">
+		<main class="container">
+			<section class="information-main clearfix">
 				<div class="information-left">
 					<p>Стоимость:</p>
 						<form action="#" method="get">
@@ -89,19 +90,18 @@
 							<img src="img/dovetail.jpg" width="239" height="240"  alt="dovetail">
 						</p>
 					</div>
-				</div>
-				
-				<div class="pagination">
-					<a class="pagination-number pagination-active" href="#">1</a>
-					<a class="pagination-number" href="#">2</a>
-					<a class="pagination-number" href="#">3</a>
-					<a class="pagination-number" href="#">Следующая</a>
+					<div class="pagination">
+						<a class="pagination-number pagination-active" href="#">1</a>
+						<a class="pagination-number" href="#">2</a>
+						<a class="pagination-number" href="#">3</a>
+						<a class="pagination-number" href="#">Следующая</a>
+					</div>
 				</div>
 			</section>
 			
 			<section class="map"><!-- Карта -->
 				<div class="interactive-map">
-					<img src="http://placehold.it/650x250" alt="карта">
+					<img src="http://placehold.it/880x412" alt="карта">
 				</div>
 				<div class="contact-window"><!-- окошко с левой стороны карты-->
 					<b class="contact-name">Nёrds design studio</b>
@@ -113,7 +113,7 @@
 		</main>
 		
 		<footer class="main-footer"><!-- Подвал -->
-			<div class="container">
+			<div class="container clearfix">
 				<div class="social">
 					<a href="#"><img src="http://placehold.it/50x50" alt="vk"></a>
 					<a href="#"><img src="http://placehold.it/50x50" alt="facebook"></a>

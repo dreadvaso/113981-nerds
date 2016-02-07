@@ -2,13 +2,14 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<title>Nerds</title>
 	</head>
 	<body>
-		<header class="main-header"><!-- шапка -->
-			<div class="container"><!-- центровка -->
-				<div class="navigation-panel"><!-- лого, навигация, блок пользователя -->
+		<header class="main-header">
+			<div class="container">
+				<div class="navigation-panel clearfix"><!-- лого, навигация, блок пользователя -->
 					<div class="main-logo"><!-- Логотип nerds -->
 						<a href="#"><img src="img/main_logo.png" width="139" height="56" alt="Нердс: дизайн-студия из Краснодара"></a>
 					</div>
@@ -24,7 +25,7 @@
 						<a class="basket" href="#">Корзина</a>
 					</div>
 				</div>
-				<section class="slider"><!-- Блок слайдера -->
+				<section class="slider clearfix"><!-- Блок слайдера -->
 					<div class="slider-left"><!-- Левая колонка слайдера -->
 						<h2 class="slogan">Долго, дорого, скрупулезно.</h2>
 						<p class="description-slogan">Математически выверенный дизайн<br>
@@ -32,7 +33,7 @@
 						<a class="description-link" href="#">Узнать больше</a>
 					</div>
 					<div class="slider-right"><!-- Правая колонка слайдера -->
-						<div class="images-slider"><!-- Картинка слайдера -->
+						<div class="images-slider">
 							<img src="img/image_slider.png" width="338" height="231" alt="komputer">
 						</div>
 					</div>
@@ -48,7 +49,7 @@
 		</header>
 			
 		<main class="container"><!-- Центровка -->
-			<section class="service"><!-- Блок с предложениями -->
+			<section class="service clearfix"><!-- Блок с предложениями -->
 				<div class="service-item">
 					<div class="service-item-picture">
 						<img src="img/item_picture_1.jpg" width="240" height="124" alt="">
@@ -81,7 +82,7 @@
 				</div>
 			</section>
 			
-			<section class="about-company"><!-- Информация о компании -->
+			<section class="about-company clearfix"><!-- Информация о компании -->
 				<div class="about-company-left"><!-- Левая колонка -->
 					<h1 class="title-company">Мы &ndash; маленькая, но гордая дизайн-студия из Краснодара.</h1>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический
@@ -95,7 +96,7 @@
 				</div>
 				<div class="about-company-right"><!-- Правая колонка -->
 					<div class="secondary-logo">
-						<img src="http://placehold.it/140x100" alt="logo">
+						<img src="img/main_logo.png" width="139" height="56" alt="Нердс: дизайн-студия из Краснодара">
 						<b class="mark">Since 2004</b>
 					</div>
 					<p>Как мы работаем:</p>
@@ -107,7 +108,7 @@
 				</div>
 			</section>
 			
-			<section class="partners"><!-- Логотипы компаний -->
+			<section class="partners clearfix"><!-- Логотипы компаний -->
 				<div class="partners-logo">
 					<a href="#"><img src="img/partners_logo_1.png" width="198" height="37" alt="glukhanko"></a>
 				</div>
@@ -121,19 +122,19 @@
 			
 			<section class="map"><!-- Карта -->
 				<div class="interactive-map">
-					<img src="http://placehold.it/650x250" alt="карта">
+					<img src="http://placehold.it/880x412" alt="карта">
 				</div>
 				<div class="contact-window"><!-- окошко с левой стороны карты-->
 					<b class="contact-name">Nёrds design studio</b>
 					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел. +7(812)275-75-75</p>
-					<a class="contact-form">Напишите нам</a>
+					<a class="contact-form" href="#">Напишите нам</a>
 				</div>
 			</section>
 		</main>
 		
 		<footer class="main-footer"><!-- Подвал -->
-			<div class="container">
+			<div class="container clearfix">
 				<div class="social">
 					<a href="#"><img src="http://placehold.it/50x50" alt="vk"></a>
 					<a href="#"><img src="http://placehold.it/50x50" alt="facebook"></a>
