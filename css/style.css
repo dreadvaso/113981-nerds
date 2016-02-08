@@ -66,6 +66,9 @@ h1, h2{
 	width: 338px;
 	height: 231px;
 }
+.images-slider img{ /* картинка не вылезает за пределы если она > */
+	 width: 100%;
+}
 .slider-points{ /* переключатель слайдера */
 	clear: both;
 	text-align: center;
@@ -77,6 +80,9 @@ h1, h2{
 	float: left;
 	width: 240px;
 	margin-right: 80px;
+}
+.service-item-picture img{
+	width: 100%;
 }
 .service-item:last-child{
 	margin-right: 0;
@@ -121,6 +127,11 @@ h1, h2{
 }
 
 /* Сетка inner.html */
+.header-welcome-shop{
+	padding-left: 110px; /* заголовок каталога */
+	padding-right: 120px;
+	padding-bottom: 92px;
+}
 .information-main{
 	margin-bottom: 75px;
 }
@@ -133,17 +144,21 @@ h1, h2{
 	float: right;
 	width: 560px;
 }
-.gallery-model{ /* галлерея */
+.gallery-browser{ /* браузерная плашка */
+	width: 240px;
+	border-radius: 5px 5px 0 0;
+	background-color: rgba(215, 214, 193, 0.3);
+	min-height: 30px; /* Пока не знаю как круглишки сделать поэтому поставил высоту. Есть догадки поставить их как маркер списка ul*/
+}
+.gallery-model{
 	font-size: 0;
 }
-.gallery-model p{
+.gallery-model-item{
 	display: inline-block;
 	vertical-align: top;
-}
-.gallery-model p>img{
 	margin-right: 80px;
 }
-.gallery-model p>img:nth-child(2){
+.gallery-model-item:nth-child(2n){
 	margin-right: 0;
 }
 .pagination{
