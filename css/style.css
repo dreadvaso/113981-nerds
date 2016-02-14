@@ -6,8 +6,7 @@ body{
 	color: #000000;
 	font-family: "Roboto Medium", "Tahoma", sans-serif;
 }
-/* сетка */
-.container,
+/*.container,
 .main-logo,
 .navigation-menu,
 .user-block,
@@ -15,14 +14,10 @@ body{
 .slider-left,
 .slider-right,
 .service-item,
-.about-company-left,
-.about-company-right,
-.partners-logo,
 .contact-window,
-.social,
 .footer-information,
 .main-footer,
-.information-left,
+.information-left,*/
 .information-right{
 	outline: 1px solid black;
 }
@@ -57,7 +52,7 @@ body{
 	float: left;
 	width: 460px;
 	
-	margin-top: 44px;
+	margin-top: 55px;
 	margin-bottom: 46px;
 }
 .navigation-menu ul{
@@ -75,10 +70,11 @@ body{
 }
 .navigation-menu a{
 	display: block;
-	padding-right: 40px;
-	padding-left: 10px;
+	padding-right: 49px;
 	
 	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
 	line-height: 30px;
 	color: #000000;
 	font-family: "Roboto Medium", "Tahoma", sans-serif;
@@ -92,15 +88,17 @@ body{
 	background-color: none;
 }
 .link-active span{
-	padding-right: 40px;
-	padding-left: 10px;
+	text-transform: uppercase;
+	display: block;
+	padding-right: 49px;
+	padding-top: 4px;
 }
 .navigation-menu .link-active::after{
 	content: "";
 	position: absolute;
 	bottom: 0;
-	right: 40px;
-	left: 10px;
+	right: 49px;
+	left: 0;
 	
 	height: 3px;
 	
@@ -110,8 +108,8 @@ body{
 	float: right;
 	width: 100px;
 	box-sizing: border-box;
-	padding-left: 42px;
-	margin-top: 44px;
+	padding-left: 34px;
+	margin-top: 55px;
 }
 .user-block  .basket{
 	position: relative;
@@ -120,6 +118,7 @@ body{
 	line-height: 30px;
 	color: #000000;
 	font-family: "Roboto Medium", "Tahoma", sans-serif;
+	text-transform: uppercase;
 }
 .user-block  .basket:hover{
 	color: #fb565a;
@@ -127,7 +126,7 @@ body{
 .user-block  .basket::before{
 	content: "";
 	position: absolute;
-	left: -25px;
+	left: -28px;
 	top: 0px;
 	
 	width: 15px;
@@ -155,16 +154,17 @@ body{
 	font-size: 12px;
 	line-height: 18px;
 	color: #ffffff;
+	font-weight: normal;
 	text-decoration: none;
 	text-align: center;
 	text-transform: uppercase;
 	font-family: "Roboto Medium", "Tahoma", sans-serif;
 }
 .slider-left .description-btn{
-	margin-top: 11px;
+	margin-top: 27px;
 	
 	width: 240px;
-	padding: 5px 0;
+	padding: 10px 0;
 	background-color: #fb565a;
 }
 .description-btn:hover{
@@ -176,7 +176,7 @@ body{
 .slider-right{ /* правая колонка слайдера */
 	float: right;
 	width: 338px;
-	height: 231px;
+	height: 283px;
 }
 .images-slider img{ /* картинка не вылезает за пределы если она > */
 	 width: 100%;
@@ -186,7 +186,10 @@ body{
 	text-align: center;
 }
 .service{ /* блок с предложениями */
-	margin-bottom: 131px;
+	padding-bottom: 80px;
+	border-bottom: 2px solid #eeeeee;
+	
+	margin-bottom: 72px;
 }
 .service-item{ /* предложения */
 	float: left;
@@ -195,20 +198,26 @@ body{
 }
 .service-item-picture img{
 	width: 100%;
+	
+	margin-bottom: 18px;
 }
 .service-item:last-child{
 	margin-right: 0;
 }
-.service-item  .service-name{
+.service-name{
 	font-size: 18px;
 	line-height: 30px;
+	font-weight: normal;
+	text-transform: uppercase;
 }
 .service-item p{
+	margin-bottom: 22px;
+
 	font-size: 15px;
 }
 .service-item .btn-red, .btn-green, .btn-yellow{
 	width: 140px;
-	padding: 4px 0;
+	padding: 10px 0;
 }
 .btn-red{
 	background-color: #fb565a;
@@ -238,82 +247,166 @@ body{
 	background-color: #c09b24;
 }
 .about-company{ /* информация о компании */
-	margin-bottom: 131px;
+	margin-bottom: 68px;
 }
 .about-company-left{
 	float: left;
-	width: 560px;
-	margin-right: 80px;
+	width: 621px;
 }
 .about-company-left .title-company{
 	margin: 0;
-	padding-bottom: 20px;
+	padding-bottom: 5px;
 	
 	font-size: 36px;
 	line-height: 36px;
 }
+.about-company-left p{
+	padding-bottom: 20px;
+}
+.about-company-left .title-features{
+	padding-bottom: 10px;
+}
+.title-features{
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
 .list-features{
+	position: relative;
 	margin: 0;
 	padding: 0;
 	
 	list-style: none;
 }
 .list-features li{
-	padding-left: 35px;
-	padding-bottom: 20px;
+	padding-left: 37px;
+	padding-bottom: 16px;
+}
+.list-features li::before{ /* красные полоски */
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 12px;
+	
+	width: 25px;
+	height: 2px;
+	
+	background-color: #fb565a;
+}
+.list-features li:nth-child(2)::before{
+	top: 49px;
+}
+.list-features li:nth-child(3)::before{
+	top: 87px;
 }
 .about-company-right{
 	float: right;
 	width: 240px;
+	
+	background: url("../img/hr.png") no-repeat 5px 102px;
 }
 .about-company-right .secondary-logo{
 	width: 139px; 
 	height: 56px;
-	margin-bottom: 130px;
+	padding-left: 50px;
+	margin-bottom: 117px;
 }
 .secondary-logo .mark{
 	line-height: 8.56px;
 	text-transform: uppercase;
 	font-weight: normal;
-	padding-top: 50px;
+	padding-top: 38px;
 	text-align: center;
+	padding-left: 10px;
 }
 .secondary-logo img{
 	width: 139px; 
 	height: 56px;
 }
 .partners{ /* партнеры */
-	margin-bottom: 118px;
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+	padding-top: 45px;
+	padding-bottom: 33px;
+
+	margin-bottom: 85px;
 }
 .partners-logo{
 	float: left;
 	width: 240px;
 	margin-right: 80px;
+	opacity: 0.2;
+}
+.partners-logo:hover{
+	opacity: 1;
 }
 .partners-logo:last-child{
 	margin-right: 0;
 }
-.map{
-	margin-bottom: 80px;
-}
-.contact-window{ /* окошко на карте */
+/*.contact-window{  окошко на карте
 	width: 250px;
 }
+*/
 .social{
 	float: left;
 	width: 240px;
+	padding: 70px 0;
+	font-size: 0;
+
 	margin-right: 80px;
+}
+.social-btn{
+	display: inline-block;
+	width: 60px;
+	height: 59px;
+	border-radius: 40px;
+	margin-right: 25px;
+	
+	vertical-align: top;
+	background: #eeeeee url("../img/sprite.png") no-repeat center;
+}
+.social-btn:last-child{
+	margin-right: 0;
+}
+.social-vk{
+	background-position: 7px -263px;
+}
+.social-fb{
+	background-position: 13px -125px;
+}
+.social-inst{
+	background-position: 10px -166px;
+}
+.social-btn:hover{
+	background-color: #fb565a;
+}
+.social-btn:active{
+	background-color: #d6494d;
 }
 .footer-information{	
 	float: right;
 	width: 560px;
+	padding: 42px 0;
+}
+.footer-information h2{
+	font-size: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+.footer-information p{
+	color: #283136;
 }
 
-/* Сетка inner.html */
+/* inner.html */
 .header-welcome-shop{
 	padding-left: 110px; /* заголовок каталога */
 	padding-right: 120px;
-	padding-bottom: 92px;
+	padding-bottom: 86px;
+	width: 800px;
+	
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: normal;
 }
 .information-main{
 	margin-bottom: 75px;
@@ -323,9 +416,68 @@ body{
 	width: 240px;
 	margin-right: 80px;
 }
+.information-left p{
+	margin: 0;
+	padding-bottom: 20px;
+	padding-top: 37px;
+	
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.information-left p:first-child{
+	padding-top: 0;
+}
+.information-left .choice{
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+}
+.submit{
+	margin-top: 37px;
+	width: 160px;
+	padding: 10px 0;
+	
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 18px;
+	border: none;
+	outline: none;
+	font-family: "Roboto Medium", "Tahoma", sans-serif;
+	background-color: #f1f1f1;
+}
+.submit:hover{
+	background-color: #e5e5e5;
+}
+.submit:active{
+	background-color: #d5d5d5;
+}
 .information-right{
 	float: right;
 	width: 560px;
+}
+.information-right .sorting{
+	position: relative;
+	margin-bottom: 5px;
+}
+.sorting b{
+	padding-right: 38px;
+
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+.sorting a{
+	margin-right: 42px;
+	
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 18px;
+	color: #c7c7c7;
+	text-transform: uppercase;
+	border-bottom: 1px dotted #00ca74;
+	font-family: "Roboto Medium", "Tahoma", sans-serif;
 }
 .gallery-browser{ /* браузерная плашка */
 	width: 240px;
