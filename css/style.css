@@ -381,10 +381,10 @@ body{
 
 /* inner.html */
 .header-welcome-shop{
-	padding-left: 110px; /* заголовок каталога */
-	padding-right: 120px;
-	padding-bottom: 86px;
-	width: 800px;
+	text-align: center;
+	padding-left: 90px;
+	padding-right: 100px;
+	padding-bottom: 90px;
 	
 	text-transform: uppercase;
 	font-size: 40px;
@@ -440,19 +440,19 @@ body{
 	float: right;
 	width: 560px;
 }
-.information-right .sorting{
-	margin-bottom: 5px;
-}
 .sorting b{
-	padding-right: 38px;
-
+	padding-right: 43px;
+	
 	font-size: 12px;
 	line-height: 18px;
 	text-transform: uppercase;
 }
-.sorting a{
-	margin-right: 42px;
+.information-right .sorting{
 	position: relative;
+	margin-bottom: 18px;
+}
+.sorting a{
+	margin-right: 40px;
 	
 	text-decoration: none;
 	font-size: 12px;
@@ -462,18 +462,6 @@ body{
 	border-bottom: 1px dotted #00ca74;
 	font-family: "Roboto Medium", "Tahoma", sans-serif;
 }
-.sorting-item-arrow::after{
-	content: "";
-	position: absolute;
-	
-	width: 11px;
-	height: 10px;
-	
-	background: red url("../img/sprite.png") no-repeat center;
-}
-.arrow-top{
-	background-position: -10px -223px;;
-}
 .sorting a:hover{
 	color: #000000;
 }
@@ -481,13 +469,41 @@ body{
 	color: #000000;
 	border: none;
 }
+.sorting .sorting-item-arrow{
+	position: absolute;
+	margin-right: 5px;
+	
+	width: 11px;
+	height: 10px;
+	text-decoration: none;
+	border: none;
+	background: transparent url("../img/sprite.png") no-repeat center;
+	opacity: 0.2;
+}
+.sorting .sorting-item-arrow:active{
+	opacity: 1;
+}
+.sorting .arrow-bottom{
+	right: 0;
+	bottom: 5px;
+	background-position: -10px -80px;
+}
+.sorting .arrow-top{
+	right: 15px;
+	bottom: 5px;
+	background-position: -10px -223px;
+}
+
 .gallery-browser{ /* браузерная плашка */
 	width: 240px;
 	border-radius: 5px 5px 0 0;
 	background-color: #f1f1f1;
 	min-height: 30px; 
 }
-.gallery-browser .browser-circle{
+.gallery-browser:hover{
+	background-color: #797979;
+}
+.gallery-browser .browser-circle{ /* круглишки */
 	display: inline-block;
 	margin-left: 10px;
 	margin-top: 10px;
@@ -501,10 +517,15 @@ body{
 .gallery-model{
 	font-size: 0;
 }
-.gallery-model-item{
+.gallery-model-item{ /* карточка */
+	position: relative;
+
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 80px;
+}
+.block-window{ /* блок-окно */
+	position: absolute;
 }
 .gallery-model-item:nth-child(2n){
 	margin-right: 0;
