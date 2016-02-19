@@ -35,40 +35,100 @@
 				<div class="information-left">
 					<p>Стоимость:</p>
 						<form action="#" method="get">
-							<input type="range">
-							<div class="money">
-								<label>От <input type="text" name="number" value="0"></label>
-								<label>До <input type="text" name="number-two" value="15000"></label>
+							<div class="range-filter">
+								<div class="range-controls"><!-- ползунки -->
+									<div class="scale"><!-- полная ширина -->
+										<div class="bar"></div><!-- выбранный диапазон -->
+									</div>
+									<div class="toggle toggle-min"></div><!-- ползунок -->
+									<div class="toggle toggle-max"></div>
+								</div>
+								<div class="price-controls"><!-- цена -->
+									<label class="min-price">От <input type="text" name="min-price" value="0"></label>
+									<label class="max-price">До <input type="text" name="max-price" value="15000"></label>
+								</div>
 							</div>
 						</form>
 					
 					<p>Сетка:</p>
 					<form action="#" method="get">
 						<ul class="choice">
-							<li><label><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label></li>
-							<li><label><input type="radio" name="grid" value="fixed">Фиксированная</label></li>
-							<li><label><input type="radio" name="grid" value="rubber">Резиновая</label></li>
+							<li>
+								<label>
+									<input type="radio" name="grid" value="adaptive" checked>
+									<span class="radio-indicator"></span>
+									Адаптивная
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="grid" value="fixed">
+									<span class="radio-indicator"></span>
+									Фиксированная
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="grid" value="rubber">
+									<span class="radio-indicator"></span>
+									Резиновая
+								</label>
+							</li>
 						</ul>
 					<p>Особенности:</p>
 						<ul class="choice">
-							<li><label><input type="checkbox" name="1" value="slider" checked>Слайдер</label></li>
-							<li><label><input type="checkbox" name="2" value="advantage">Блок преимуществ</label></li>
-							<li><label><input type="checkbox" name="3" value="news" checked>Новости</label></li>
-							<li><label><input type="checkbox" name="4" value="gallery">Галерея</label></li>
-							<li><label><input type="checkbox" name="5" value="basket">Корзина</label></li>
+							<li>
+								<label>
+									<input type="checkbox" name="1" value="slider" checked>
+									<span class="checkbox-indicator"></span>
+									Слайдер
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="2" value="advantage">
+									<span class="checkbox-indicator"></span>
+									Блок преимуществ
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="3" value="news" checked>
+									<span class="checkbox-indicator"></span>
+									Новости
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="4" value="gallery">
+									<span class="checkbox-indicator"></span>
+									Галерея
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" name="5" value="basket">
+									<span class="checkbox-indicator"></span>
+									Корзина
+								</label>
+							</li>
 						</ul>
 						<button class="submit" type="submit">Показать</button>
 					</form>
 				</div>
 				
 				<div class="information-right">
-					<div class="sorting">
-						<b>Сортировать:</b>
-						<a href="#">По цене</a>
-						<a href="#">По типу</a>
-						<a href="#">По функционалу</a>
-						<a class="sorting-item-arrow arrow-top" href="#"></a><!-- стрелка вверх -->
-						<a class="sorting-item-arrow arrow-bottom" href="#"></a><!-- стрелка вниз -->
+					<div class="sorting clearfix">
+						<div class="sorting-left">
+							<b>Сортировать:</b>
+							<a href="#">По цене</a>
+							<a href="#">По типу</a>
+							<a href="#">По функционалу</a>
+						</div>
+						<div class="sorting-right">
+							<a class="sorting-item-arrow arrow-top arrow-active" href="#"></a><!-- стрелка вверх -->
+							<a class="sorting-item-arrow arrow-bottom" href="#"></a><!-- стрелка вниз -->
+						</div>
 					</div>
 					
 					<div class="gallery-model">
@@ -130,7 +190,7 @@
 								<span class="browser-circle"></span>
 								<span class="browser-circle"></span>
 							</div>
-							<img src="img/avenue.jpg" width="239" height="240"alt="avenue">
+							<img src="img/avenue.jpg" width="239" height="240" alt="avenue">
 							<div class="block-window">
 								<h3>Avenue</h3>
 								<p>Интернет магазин с личным кабинетом</p>
@@ -152,7 +212,7 @@
 						</div>
 					</div>
 					<div class="pagination">
-						<span class="pagination-active" href="#">1</span>
+						<span class="pagination-active">1</span>
 						<a class="pagination-number" href="#">2</a>
 						<a class="pagination-number" href="#">3</a>
 						<a class="pagination-number" href="#">Следующая</a>
@@ -162,15 +222,16 @@
 		</main>
 		
 		<aside class="map"><!-- Карта -->
-				<div class="interactive-map">
-					<img src="img/map.jpg" width="1199" height="416" alt="карта">
-				</div>
-				<!-- <div class="contact-window">
-					<b class="contact-name">Nёrds design studio</b>
-					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-					<p>тел. +7(812)275-75-75</p>
-					<a class="contact-form" href="#">Напишите нам</a>
-				</div> --><!-- окошко на карте -->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.32089461570253!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455888833517"></iframe>
+			<div class="contact-window">
+				<b>Nёrds design studio</b>
+				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7(812)275-75-75</p>
+				<a class="btn-contact" href="#">Напишите нам</a>
+			</div>
+			<div class="logo-cursor">
+				<img src="img/logo-cursor.png" width="231" height="190" alt="cursor">
+			</div>
 		</aside>
 		
 		<footer class="main-footer"><!-- Подвал -->

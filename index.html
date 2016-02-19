@@ -10,11 +10,11 @@
 	<body>
 		<header class="main-header">
 			<div class="container">
-				<div class="navigation-panel clearfix"><!-- лого, навигация, блок пользователя -->
-					<div class="main-logo"><!-- Логотип nerds -->
+				<div class="navigation-panel clearfix">
+					<div class="main-logo">
 						<a href="index.html"><img src="img/main_logo.png" width="139" height="56" alt="Нердс: дизайн-студия из Краснодара"></a>
 					</div>
-					<nav class="navigation-menu"><!-- главная навигация -->
+					<nav class="navigation-menu">
 						<ul>
 							<li class="link-active"><span>Студия</span></li>
 							<li><a href="#">Клиенты</a></li>
@@ -22,34 +22,47 @@
 							<li><a href="#">Контакты</a></li>
 						</ul>
 					</nav>
-					<div class="user-block"><!-- блок пользователя -->
+					<div class="user-block">
 						<a class="basket" href="#">Корзина</a>
 					</div>
 				</div>
-				<section class="slider clearfix"><!-- Блок слайдера -->
-					<div class="slider-left"><!-- Левая колонка слайдера -->
-						<h2 class="slogan">Долго, дорого, скрупулезно.</h2>
-						<p class="description-slogan">Математически выверенный дизайн<br>
-						для вашего сайта или мобильного приложения.</p>
-						<a class="btn description-btn" href="#">Узнать больше</a>
+				<div class="slider">
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<input type="radio" id="btn-3" name="toggle">
+					<div class="slider-controls"><!-- переключка -->
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
+						<label for="btn-3"></label>
 					</div>
-					<div class="slider-right"><!-- Правая колонка слайдера -->
-						<div class="images-slider">
-							<img src="img/image_slider.png" width="338" height="231" alt="komputer">
+					<div class="slides"><!-- слайды -->
+						<div class="slide">
+							<div class="slide-text">
+								<div class="slide-title">Долго, дорого,<br> скрупулезно.</div>
+								<p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+								<a class="btn-slide" href="#">Узнать больше</a>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-text">
+								<div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+								<p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
+								<a class="btn-slide" href="#">Узнать больше</a>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-text">
+								<div class="slide-title">Только наркотики,<br> только хардкор!</div>
+								<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+								<a class="btn-slide" href="#">Узнать больше</a>
+							</div>
 						</div>
 					</div>
-					<div class="slider-points"><!-- Переключатель слайдера -->
-						<form action="#" method="get">
-							<input type="radio" name="click" value="one" checked>
-							<input type="radio" name="click" value="two">
-							<input type="radio" name="click" value="three">
-						</form>
-					</div>
-				</section>
+				</div>
 			</div>
 		</header>
 			
-		<main class="container"><!-- Центровка -->
+		<main class="container">
 			<section class="service clearfix"><!-- Блок с предложениями -->
 				<div class="service-item">
 					<div class="service-item-picture">
@@ -115,18 +128,19 @@
 			</div>
 		</main>
 		<aside class="map"><!-- Карта -->
-				<div class="interactive-map">
-					<img src="img/map.jpg" width="1199" height="416" alt="карта">
-				</div>
-				<!-- <div class="contact-window">
-					<b class="contact-name">Nёrds design studio</b>
-					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-					<p>тел. +7(812)275-75-75</p>
-					<a class="contact-form" href="#">Напишите нам</a>
-				</div> --><!-- окошко на карте -->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.32089461570253!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455888833517"></iframe>
+			<div class="contact-window">
+				<b>Nёrds design studio</b>
+				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7(812)275-75-75</p>
+				<a class="btn-contact" href="#">Напишите нам</a>
+			</div>
+			<div class="logo-cursor">
+				<img src="img/logo-cursor.png" width="231" height="190" alt="cursor">
+			</div>
 		</aside>
 		
-		<footer class="main-footer"><!-- Подвал -->
+		<footer class="main-footer">
 			<div class="container clearfix">
 				<div class="social">
 					<a class="social-btn social-vk" href="#">ВК</a>
