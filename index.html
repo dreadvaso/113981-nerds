@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<title>Nerds</title>
@@ -63,7 +63,7 @@
 		</header>
 			
 		<main class="container">
-			<section class="service clearfix"><!-- Блок с предложениями -->
+			<div class="service clearfix"><!-- Блок с предложениями -->
 				<div class="service-item">
 					<div class="service-item-picture">
 						<img src="img/item_picture_1.jpg" width="240" height="124" alt="">
@@ -88,7 +88,7 @@
 					<p>Вы даже не подозреваете насколько вы изумительны!</p>
 					<a class="btn btn-yellow" href="#">Заказать</a>
 				</div>
-			</section>
+			</div>
 			
 			<section class="about-company clearfix"><!-- Информация о компании -->
 				<div class="about-company-left"><!-- Левая колонка -->
@@ -127,7 +127,7 @@
 				</div>
 			</div>
 		</main>
-		<aside class="map"><!-- Карта -->
+		<div class="map"><!-- Карта -->
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.32089461570253!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455888833517"></iframe>
 			<div class="contact-window">
 				<b>Nёrds design studio</b>
@@ -138,7 +138,7 @@
 			<div class="logo-cursor">
 				<img src="img/logo-cursor.png" width="231" height="190" alt="cursor">
 			</div>
-		</aside>
+		</div>
 		
 		<footer class="main-footer">
 			<div class="container clearfix">
@@ -153,5 +153,25 @@
 				</div>
 			</div>
 		</footer>
+		<div class="modal-window">
+			<button class="modal-window-close" type="button" title="Закрыть">Закрыть</button>
+			<form action="#" method="post">
+				<div class="modal-window-form">
+					<div class="modal-window-text">
+						<label><b>Ваше имя:</b>
+						<input type="text" name="name" placeholder="представьтесь пожалуйста" required></label>
+					</div>
+					<div class="modal-window-text">
+						<label><b>Ваш e-mail:</b>
+						<input type="email" name="email" placeholder="для отправки ответа" required></label>
+					</div>
+					<div class="contact-window-textarea">
+						<label><b>Текст письма:</b>
+						<textarea placeholder="в свободной форме"></textarea></label>
+					</div>
+					<a class="contact-window-btn" href="#">Отправить</a>
+				</div>
+			</form>
+		</div>
 	</body>
 </html>
