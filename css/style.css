@@ -514,20 +514,22 @@ body{
 .footer-information p{
 	color: #283136;
 }
-.modal-window{
-	position: absolute;
-	bottom: -1350px;
-	left: 43%;
+.modal-window{ /* модальное окно  */
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
 
 	width: 470px;
-	margin-left: -230px;
+	height: 316px;
 	padding: 50px 80px;
+	padding-bottom: 75px;
 	
 	color: #000;
 	background-color: #fff;
-}
-.modal-window-show{
-	display: block;
+	box-shadow: 10px 0px 55px 10px #ebebeb;
 }
 .modal-window-close{
 	position: absolute;
@@ -582,7 +584,7 @@ body{
 	font-weight: 500;
 	line-height: 18px;
 }
-.modal-window-form .contact-window-textarea{
+.modal-window-textarea{
 	margin-top: 22px;
 }
 .modal-window-text input[type="text"], input[type="email"], textarea{
@@ -590,11 +592,14 @@ body{
 	padding: 7px 0;
 	padding-left: 15px;
 	
+	outline: none;
 	border: 2px solid #d7dcde;
 }
 textarea{
 	width: 420px;
 	height: 114px;
+	resize: none;
+	margin-bottom: 35px;
 }
 .modal-window-text input:hover, textarea:hover{
 	border-color: #a2a9ac;
@@ -627,25 +632,25 @@ textarea::-moz-placeholder {
 textarea:-ms-input-placeholder{
 	color: #000;
 }
-.contact-window-btn{
+.modal-window-btn{
 	display: block;
-	width: 420px;
+	width: 440px;
 	padding: 10px 10px;
-	margin-top: 40px;
 
+	border: none;
+	outline: none;
 	font-size: 12px;
 	line-height: 18px;
 	text-transform: uppercase;
-	text-decoration: none;
 	background-color: #fb565a;
 	text-align: center;
 	color: #fff;
 	font-family: "Roboto Medium", "Tahoma", sans-serif;
 }
-.contact-window-btn:hover{
+.modal-window-btn:hover{
 	background-color: #d6494d;
 }
-.contact-window-btn:active{
+.modal-window-btn:active{
 	background-color: #b63538;
 }
 /* inner.html */
@@ -881,7 +886,7 @@ textarea:-ms-input-placeholder{
 	width: 480px;
 }
 .sorting-left a{
-	margin-right: 42px;
+	margin-right: 40px;
 }
 .sorting-right{
 	float: right;
