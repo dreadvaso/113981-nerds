@@ -12,7 +12,7 @@ body{
   clear: both;
 }
 .main-header{ /* шапка */
-	min-width: 1200px;
+	min-width: 880px;
 	margin-bottom: 80px;
 	
 	background-color: #eeeeee;
@@ -440,8 +440,7 @@ body{
 	background-color: #d6494d;
 }
 .map{
-	
-    min-width: 1200px;
+	min-width: 880px;
     height: 416px;
 	margin: 0px auto;
 	background: transparent url("../img/map.jpg") no-repeat center;
