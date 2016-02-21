@@ -912,6 +912,7 @@ textarea:-ms-input-placeholder{
 }
 .sorting-right{
 	float: right;
+	margin-top: -3px;
 }
 .sorting-right .sorting-item-arrow{
 	display: inline-block;
@@ -919,7 +920,7 @@ textarea:-ms-input-placeholder{
 	width: 11px;
 	height: 10px;
 	
-	vertical-align: top;
+	vertical-align: bottom;
 	border: none;
 	opacity: 0.2;
 	background: transparent url("../img/sprite.png") no-repeat center;
@@ -944,6 +945,7 @@ textarea:-ms-input-placeholder{
 	text-transform: uppercase;
 }
 .sorting-left a{
+	vertical-align: bottom;
 	text-decoration: none;
 	font-size: 12px;
 	line-height: 18px;
