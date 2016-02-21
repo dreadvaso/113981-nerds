@@ -451,16 +451,17 @@ body{
 	height: 100%;
 	border: 0;
 }
+.map .contact{
+	position: absolute;
+	left: 15%;
+	top: 20%;
+}
 .map .logo-cursor{
 	position: absolute;
-	bottom: 115px;
-	right: 210px;
+	top: 0;
+	right: -700px;
 }
 .map .contact-window{
-	position: absolute;
-	top: 110px;
-	left: 160px;
-	
 	width: 210px;
 	padding: 20px;
 
@@ -507,6 +508,7 @@ body{
 	padding: 42px 0;
 }
 .footer-information h2{
+	font-weight: 500;
 	font-size: 36px;
 	line-height: 36px;
 	margin-bottom: 10px;
@@ -530,7 +532,7 @@ body{
 }
 .modal-window{ /* модальное окно  */
 	display: none;
-
+	
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -1070,7 +1072,10 @@ textarea:-ms-input-placeholder{
 .pagination-active{
 	border: 2px solid #f2f2f2;
 }
-
+/* для страницы form */
+.modal-display{
+	display: block;
+}
 
 
 
