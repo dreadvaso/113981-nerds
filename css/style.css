@@ -18,6 +18,7 @@ body{
 	background-color: #eeeeee;
 }
 .container{ /* центровщик */
+	position: relative;
 	width: 880px;
 	padding: 0 10px;
 	margin: 0 auto;
@@ -439,7 +440,7 @@ body{
 	background-color: #d6494d;
 }
 .map{
-	position: relative;
+	
     min-width: 1200px;
     height: 416px;
 	margin: 0px auto;
@@ -451,23 +452,22 @@ body{
 	height: 100%;
 	border: 0;
 }
-.map .contact{
-	position: absolute;
-	left: 15%;
-	top: 20%;
-}
-.map .logo-cursor{
-	position: absolute;
-	top: 0;
-	right: -700px;
-}
 .map .contact-window{
+	position: absolute;
+	left: 0;
+	top: -320px;
+	
 	width: 210px;
 	padding: 20px;
 
 	font-size: 16px;
 	line-height: 20px;
 	background-color: #fff;
+}
+.map .logo-cursor{
+	position: absolute;
+	right: 0;
+	top: -300px;
 }
 .contact-window b{
 	font-size: 16px;
