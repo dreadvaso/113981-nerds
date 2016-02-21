@@ -514,7 +514,23 @@ body{
 .footer-information p{
 	color: #283136;
 }
+@keyframes bounce{
+	0%{
+		transform: translateY(-2000px);
+	}
+	70%{
+		transform: translateY(30px);
+	}
+	90%{
+		transform: translateY(-10px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
 .modal-window{ /* модальное окно  */
+	display: none;
+
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -530,6 +546,10 @@ body{
 	color: #000;
 	background-color: #fff;
 	box-shadow: 10px 0px 55px 10px #ebebeb;
+}
+.modal-window-show{
+	display: block;
+	animation: bounce 0.6s;
 }
 .modal-window-close{
 	position: absolute;
