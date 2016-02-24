@@ -7,9 +7,9 @@ body{
 	font-family: "Roboto Medium", "Tahoma", sans-serif;
 }
 .clearfix::after{
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 .main-header{ /* шапка */
 	min-width: 880px;
@@ -29,7 +29,7 @@ body{
 	height: 56px;
 	
 	margin-top: 25px;
-	margin-right: 180px;
+	margin-right: 175px;
 }
 .main-logo img{
 	width: 139px;
@@ -57,7 +57,7 @@ body{
 }
 .navigation-menu a{
 	display: block;
-	margin-right: 49px;
+	margin-right: 40px;
 	
 	text-decoration: none;
 	text-transform: uppercase;
@@ -69,22 +69,20 @@ body{
 .navigation-menu a:hover{
 	color: #fb565a;
 }
+.navigation-menu a:active{
+	color: #8f8f8f;
+}
 .navigation-menu .link-active{
 	position: relative;
 	
-	background-color: none;
-}
-.link-active span{
-	text-transform: uppercase;
-	display: block;
-	padding-right: 49px;
-	padding-top: 4px;
+	pointer-events: none;
+	cursor: default;
 }
 .navigation-menu .link-active::after{
 	content: "";
 	position: absolute;
 	bottom: 0;
-	right: 49px;
+	right: 40px;
 	left: 0;
 	
 	height: 3px;
@@ -110,6 +108,9 @@ body{
 .user-block  .basket:hover{
 	color: #fb565a;
 }
+.user-block  .basket:active{
+	color: #8f8f8f;
+}
 .user-block  .basket::before{
 	content: "";
 	position: absolute;
@@ -124,6 +125,10 @@ body{
 }
 .user-block  .basket:hover::before{
 	background-position: -10px -45px;
+}
+.user-block  .basket:active::before{
+	background-position: -10px -10px;
+	opacity: 0.6;
 }
 .slider{
 	position: relative;
@@ -304,12 +309,13 @@ body{
 }
 .about-company-left{
 	float: left;
-	width: 621px;
+	width: 601px;
 }
 .about-company-left .title-company{
 	margin: 0;
 	padding-bottom: 5px;
 	
+	font-weight: normal;
 	font-size: 36px;
 	line-height: 36px;
 	font-family: "Roboto Medium", "Tahoma", sans-serif;
@@ -443,7 +449,7 @@ body{
 	min-width: 880px;
     height: 416px;
 	margin: 0px auto;
-	background: transparent url("../img/map.jpg") no-repeat center;
+	background: #b5b5b5 url("../img/map.jpg") no-repeat center;
     background-size: cover;
 }
 .map iframe{
@@ -1072,6 +1078,8 @@ textarea:-ms-input-placeholder{
 }
 .pagination-active{
 	border: 2px solid #f2f2f2;
+	pointer-events: none;
+	cursor: default;
 }
 /* для страницы form */
 .modal-display{
